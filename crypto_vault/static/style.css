@@ -1,0 +1,349 @@
+
+
+
+/* ============================
+   Register Page Styling
+============================ */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.register-card {
+  background: linear-gradient(135deg, #0d1117, #1a1f2b);
+  color: #fff;
+  border-radius: 15px;
+  padding: 45px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.register-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.register-card h2 {
+  font-weight: 700;
+}
+
+.brand {
+  color: #00d084;
+  font-weight: 800;
+}
+
+.form-control {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.form-control:focus {
+  background-color: #0d1117;
+  border-color: #00d084;
+  box-shadow: 0 0 10px rgba(0, 208, 132, 0.4);
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #00d084;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #00b86b;
+  transform: translateY(-2px);
+}
+
+.text-link {
+  color: #00d084;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   Login Page Styling
+============================ */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.login-card {
+  background: linear-gradient(135deg, #0d1117, #1a1f2b);
+  color: #fff;
+  border-radius: 15px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+}
+
+.login-card h2 {
+  font-weight: 700;
+}
+
+.brand {
+  color: #00d084;
+  font-weight: 800;
+}
+
+.form-control {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.form-control:focus {
+  background-color: #0d1117;
+  border-color: #00d084;
+  box-shadow: 0 0 10px rgba(0, 208, 132, 0.4);
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #00d084;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #00b86b;
+  transform: translateY(-2px);
+}
+
+.text-link {
+  color: #00d084;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   Welcome Section Styling
+============================ */
+.welcome-section {
+  background: linear-gradient(135deg, #0d1117, #1a1f2b);
+  color: #fff;
+  border-radius: 20px;
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 100px auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.welcome-title .brand {
+  color: #00d084; /* a bright crypto green accent */
+  font-weight: 800;
+}
+
+.welcome-subtitle {
+  font-size: 1.2rem;
+  color: #c9d1d9;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.btn {
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #00d084;
+  border: none;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #00b86b;
+  transform: translateY(-2px);
+}
+
+.btn-outline-light {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #0d1117;
+  transform: translateY(-2px);
+}
+
+/* === General Reset & Fonts === */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9fafc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+/* === Navbar Styling === */
+.navbar {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 0.8rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.navbar-brand span {
+    font-weight: 800;
+}
+
+.navbar .nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    margin-left: 1rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #007bff !important;
+    transform: translateY(-2px);
+}
+
+/* === Navbar Brand Crypto Colors === */
+span.blue { color: #007bff; }     /* Blue */
+span.red { color: #ff4d4d; }      /* Red */
+span.yellow { color: #f5c518; }   /* Yellow */
+span.green { color: #00b894; }    /* Green */
+
+/* === Flash Message === */
+.alert {
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 0;
+}
+
+/* === Main Content === */
+main.container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+/* === Buttons === */
+.btn-primary, .btn-success, .btn-danger {
+    border-radius: 30px;
+    font-weight: 500;
+    padding: 0.6rem 1.4rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover, .btn-success:hover, .btn-danger:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* === Footer === */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+footer form {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+footer img {
+    width: 100px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+footer img:hover {
+    opacity: 1;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    main.container {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* === Card / Dashboard Elements (for future use) === */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* === Utility Classes === */
+.text-gradient {
+    background: linear-gradient(45deg, #00b894, #007bff);
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, #007bff, #00b894);
+    color: white;
+}

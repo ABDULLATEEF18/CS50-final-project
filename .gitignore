@@ -1,0 +1,54 @@
+# --- Python & Flask Cache ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# --- Virtual Environment ---
+.venv/
+venv/
+env/
+
+# --- SQLite Databases ---
+*.sqlite
+*.db
+instance/
+
+# --- Flask App Files You Don’t Want to Upload ---
+crypto_vault.sqlite
+# The following line prevents accidental nested project uploads
+# (remove it if you actually want the crypto_vault/ folder tracked)
+#crypto_vault/
+
+# --- System Files ---
+.DS_Store
+Thumbs.db
+
+# --- IDE Configurations ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Environment Variables ---
+.env
+*.env
+
+# --- Pip & Dependency Cache ---
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Compiled / Distribution Files ---
+build/
+dist/
+*.egg-info/
+
+# --- Requirements File (Optional) ---
+# Uncomment the next line if you don't want to upload your requirements.txt
+# requirements.txt
+
+# --- Runtime Script (Optional) ---
+# Uncomment the next line if run.py should stay local only
+# run.py
+

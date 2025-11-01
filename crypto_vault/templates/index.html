@@ -1,0 +1,43 @@
+
+{% extends "layout.html" %}
+
+{% block title %}Home - CryptoVault{% endblock %}
+
+{% block main %}
+<div class="homepage-container text-center">
+    
+    <!-- Logo Section -->
+    <div class="logo-container mb-4">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="CryptoVault Logo" class="logo">
+        <h2 class="brand-name mt-2 text-primary">CryptoVault</h2>
+    </div>
+
+    {% if session.get("user_id") %}
+    <!-- User Dashboard -->
+    <div class="user-card shadow">
+        <h3 class="welcome-text">👋 Welcome back, <span class="username">{{ username }}</span>!</h3>
+        <p class="balance">💰 Account Balance: <strong>${{ balance | round(2) }}</strong></p>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons mt-5">
+        <a href="/buy" class="btn btn-success btn-lg mr-3">Buy Crypto</a>
+        <a href="/sell" class="btn btn-danger btn-lg mr-3">Sell Crypto</a>
+        <a href="/transfer" class="btn btn-warning btn-lg">Transfer Cash</a>
+        <a href="/portfolio" class="btn btn-warning btn-lg">portfolio</a>
+        
+    </div>
+
+    {% else %}
+    <!-- For Visitors -->
+    <section class="welcome-section mt-5">
+        <h2 class="welcome-title">👋 Welcome to <span class="brand text-primary">CryptoVault</span>!</h2>
+        <h4 class="welcome-subtitle mt-3 mb-4">
+            Track your crypto portfolio and manage your assets securely.
+        </h4>
+        <a href="/register" class="btn btn-primary btn-lg mt-2 mr-2">Get Started</a>
+        <a href="/login" class="btn btn-outline-primary btn-lg mt-2">Log In</a>
+    </section>
+    {% endif %}
+</div>
+{% endblock %}

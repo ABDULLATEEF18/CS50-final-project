@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Sell Cryptocurrency</h2>
+
+    {% if get_flashed_messages() %}
+        <div class="alert alert-info">
+            {{ get_flashed_messages()[0] }}
+        </div>
+    {% endif %}
+
+    <!-- User balance display -->
+    <div class="card p-3 mb-4 shadow-sm">
+        <h5>Your Current Balance:</h5>
+        <p class="lead text-success fw-bold">
+            ${{ user_cash | round(2) }}
+        </p>
+    </div>
+
+    <form action="/sell" method="post" class="card p-4 shadow-lg border-0">
+        <div class="mb-3">
+            <label for="symbol" class="form-label">Coin Symbol</label>
+            <input
+                type="text"
+                class="form-control"
+                id="symbol"
+                name="symbol"
+                placeholder="e.g. bitcoin"
+                required
+            >
+            <small class="form-text text-muted">
+                Enter the coin ID (for example: <code>bitcoin</code>, <code>ethereum</code>)
+            </small>
+        </div>
+
+        <div class="mb-3">
+            <label for="shares" class="form-label">Number of Shares</label>
+            <input
+                type="number"
+                class="form-control"
+                id="shares"
+                name="shares"
+                placeholder="Enter number of shares to sell"
+                min="1"
+                required
+            >
+        </div>
+
+        <button type="submit" class="btn btn-danger w-100">
+            Sell
+        </button>
+    </form>
+</div>
+{% endblock %}
+
